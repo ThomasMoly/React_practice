@@ -1,0 +1,63 @@
+* {
+    /* standard */
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+body{
+    padding: 40px;
+    margin: 20;
+    background-color: #151515;
+    font-family: 'Franklin Gothic Medium', Arial;
+}
+
+h2, h1, h3{
+    color: antiquewhite;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 45px;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+#card1{
+    border: 1px solid #4b5362;
+    padding: 20px;
+    margin: 20px;
+    background-color: #31363f;
+    border-radius: 10px;
+    min-height: 100px;
+}
+
+button {
+    border: black;
+    font-size: 30px;
+    background-color: azure;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+
+}
+
+.rating, .rating-increase, .rating-decrease {
+    background-color: transparent;
+    font-size: 30px;
+}
+
+.rating-increase{
+    cursor: pointer;
+    text-align: left;
+    width: 20%;
+}
+
+.rating-decrease{
+    cursor: pointer;
+    text-align: right;
+    width: 18%;
+}
