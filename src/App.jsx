@@ -1,4 +1,4 @@
-import React, { use, useEffect, useState } from 'react'
+import React from 'react'
 import NavBar from './components/NavBar.jsx';
 import {Route, Routes} from "react-router-dom"
 import TVShows from './pages/TVShows.jsx';
@@ -9,29 +9,19 @@ import Movies from './pages/Movies.jsx';
 
 
 const App = () => {
-    
-    let component
-    switch (window.location.pathname) {
-      case '/':
-        component = <Movies/>
-        break;
-      case '/TVShows':
-        component = <TVShows/>
-        break;
-      case 'Anime':
-        component = <Anime/>
-        break;
-      case 'Books':
-        component = <Books/>
-        break;
-      default:
-        break;
-    }
+   
   return (
     <main>
 
         <NavBar/>
-        {component}
+        <div className='container'>
+          <Routes>
+            <Route path='/' element={<Movies/>}/>
+            <Route path='/Books' element={<Books/>}/>
+            <Route path='/TVShows' element={<TVShows/>}/>
+            <Route path='/Anime' element={<Anime/>}/>
+          </Routes>
+        </div>
         
         
     </main>

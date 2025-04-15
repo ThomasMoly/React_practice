@@ -3,6 +3,10 @@
 
 @import "tailwindcss";
 
+main {
+  align-content: center;
+}
+
 @theme {
   --color-primary: #030014;
 
