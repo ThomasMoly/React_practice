@@ -1,12 +1,10 @@
 import React, { use, useEffect, useState } from 'react'
 import { useDebounce } from 'use-debounce';
-import { Client } from 'appwrite';
 import Search from '../components/search'
 import Spinner from '../components/Spinner';
 import MovieCard from '../components/MovieCard';
 import { getTrendingMovies, updateSearchCount } from '../appwrite.js';
-import NavBar from '../components/NavBar.jsx';
-import {Route, Routes} from "react-router-dom"
+import '../CSS/Movies.css'
 
 
 const API_BASE_URL = 'https://api.themoviedb.org/3'
