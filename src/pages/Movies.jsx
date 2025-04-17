@@ -3,7 +3,7 @@ import { useDebounce } from 'use-debounce';
 import Search from '../components/search'
 import Spinner from '../components/Spinner';
 import MovieCard from '../components/MovieCard';
-import { getTrendingMovies, updateSearchCount } from '../appwrite.js';
+import { getTrendingMovies, updateSearchCount } from '../appwrite/appwrite.js';
 import '../CSS/Movies.css'
 
 
@@ -48,6 +48,8 @@ const App = () => {
               setMovieList([])
               return;
           }
+
+          console.log(data)
 
           setMovieList(data.results || [])
 
